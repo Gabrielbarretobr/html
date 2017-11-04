@@ -1,0 +1,209 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style:none;
+    vertical-align:baseline;
+}
+
+body {
+	a  {
+		text-decoration: none;
+		color: #005ca6;
+		font-family: arial;
+	}
+	.commit-title {
+		font-size: 12px;
+	}
+	img.photo {
+    	border-radius: 100%;
+	}
+	.container-fixed--static,.fixed {    
+	    height: 80px;
+	}
+
+	header {
+	    height: 80px;
+	    background: #ffff;
+	    border-bottom: 1px solid #f5f5f5;
+	    padding-bottom: 15px;
+		.title {	
+			text-align: center;
+			a {
+              color: #222;
+			}
+		}
+		img#logo {
+		    position: absolute;
+			left: 20px;
+			top: 10px;
+		}
+	}
+	.main {
+		height: auto;		
+		&.stats {
+    		padding-top: 40px;
+		}
+	}
+	.sidebar {
+        padding-top: 40px;
+		position: relative;
+		
+			input#search {
+				border: 1px solid #f5f5f5;
+				margin: 25px 0px;
+				width: 99%;
+				margin-left: 1px;
+				height: 40px;
+				padding: 10px;
+		  	}
+			.title {
+				padding: 10px;
+			    text-align: left;
+			}
+		}
+	ul {
+		li {
+			list-style-type: none;
+
+			&.commit-item.js-show {
+				border-bottom: 1px solid #d5d5d5;  
+			    margin-bottom: 20px;
+			    padding: 30px 25px;
+			}
+			a {
+				position: absolute;
+				cursor: pointer;
+				color: #222;
+				text-decoration: none;
+
+				&:hover {
+					color: #222;
+				}
+			}
+		}
+	}
+	.list { 
+		padding: 0px;
+		li { 
+			width: 100%;
+			margin-top: 5px;
+			background: #F9F9F9;
+			list-style: none;
+			display: flex;
+    		align-items: center;
+    		height: 40px;
+    		padding: 10px;
+
+			&:hover{ 
+				background: #F1F1F1; 
+				color: #FFF; 
+			}
+		}
+		
+	}
+	canvas#myChart {
+		float: right;
+		margin-top: 50px;
+		width: 100%!important;
+		height: 12rem!important;
+	}
+	.list-h {
+		.stats{
+			margin-left:0;
+			margin-top: 40px;
+		}
+	}
+	ul.list-h.stats {
+	    margin-left: 0px;
+	    padding: 0;
+	}
+	.list-item {
+
+		background: #F9F9F9;
+		display: inline-block;
+		padding: 10px;
+		font-family: arial;
+		line-height: 2;
+		text-align: left;
+		margin-bottom: 10px;
+		font-size: 16px;
+		width: 95%;
+	    img{
+	    	position: relative;
+	    	left: 20px;
+	    	width: 25px;
+	    	top: 4px;
+	    	height: 25px;
+	    }
+	}
+}
+
+
+@media  (min-width: 1024px) {
+	body {
+		.commit-title {
+			font-size: 16px;
+		}
+		.main {
+			height: auto;
+	    	float: right;
+	    	width: 68%;		
+		}
+		.sidebar {
+			width: 30%;
+	    	float: left;		
+				input#search {
+					width: 100%;
+					font-size: 16px;
+			  	}
+			}
+		ul	{
+			li {
+				list-style-type: none;
+			
+				a {
+					cursor: pointer;
+				    color: #222;
+				    width: 100%;
+				    text-decoration: none;
+				    padding: 15px;
+
+					&:hover {
+						color: #222;
+					}
+				}
+			}
+		}
+		.list { 
+			padding: 0px;
+			li { 
+				&:hover{ 
+					background: #F1F1F1; 
+					color: #FFF; 
+				}
+			}
+			
+		}
+		canvas#myChart {
+			float: right;
+			margin-top: 70px;
+			width: 68%!important;
+			height: 30rem!important;
+			
+		}
+		.list-item {
+		    background: #F9F9F9;
+		    display: inline-block;
+		    padding: 20px 20px;
+		    font-family: arial;
+		    line-height: 2;
+		    margin: 0 auto;
+		    margin-left: 15px;
+		    text-align: left;
+		    font-size: 16px;
+		    width: 19%;
+	   
+		}
+	}
+}

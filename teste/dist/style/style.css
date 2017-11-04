@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  vertical-align: baseline; }
+
+body a {
+  text-decoration: none;
+  color: #005ca6;
+  font-family: arial; }
+
+body .commit-title {
+  font-size: 12px; }
+
+body img.photo {
+  border-radius: 100%; }
+
+body .container-fixed--static, body .fixed {
+  height: 80px; }
+
+body header {
+  height: 80px;
+  background: #ffff;
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 15px; }
+  body header .title {
+    text-align: center; }
+    body header .title a {
+      color: #222; }
+  body header img#logo {
+    position: absolute;
+    left: 20px;
+    top: 10px; }
+
+body .main {
+  height: auto; }
+  body .main.stats {
+    padding-top: 40px; }
+
+body .sidebar {
+  padding-top: 40px;
+  position: relative; }
+  body .sidebar input#search {
+    border: 1px solid #f5f5f5;
+    margin: 25px 0px;
+    width: 99%;
+    margin-left: 1px;
+    height: 40px;
+    padding: 10px; }
+  body .sidebar .title {
+    padding: 10px;
+    text-align: left; }
+
+body ul li {
+  list-style-type: none; }
+  body ul li.commit-item.js-show {
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+    padding: 30px 25px; }
+  body ul li a {
+    position: absolute;
+    cursor: pointer;
+    color: #222;
+    text-decoration: none; }
+    body ul li a:hover {
+      color: #222; }
+
+body .list {
+  padding: 0px; }
+  body .list li {
+    width: 100%;
+    margin-top: 5px;
+    background: #F9F9F9;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    padding: 10px; }
+    body .list li:hover {
+      background: #F1F1F1;
+      color: #FFF; }
+
+body canvas#myChart {
+  float: right;
+  margin-top: 50px;
+  width: 100% !important;
+  height: 12rem !important; }
+
+body .list-h .stats {
+  margin-left: 0;
+  margin-top: 40px; }
+
+body ul.list-h.stats {
+  margin-left: 0px;
+  padding: 0; }
+
+body .list-item {
+  background: #F9F9F9;
+  display: inline-block;
+  padding: 10px;
+  font-family: arial;
+  line-height: 2;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 95%; }
+  body .list-item img {
+    position: relative;
+    left: 20px;
+    width: 25px;
+    top: 4px;
+    height: 25px; }
+
+@media (min-width: 1024px) {
+  body .commit-title {
+    font-size: 16px; }
+  body .main {
+    height: auto;
+    float: right;
+    width: 68%; }
+  body .sidebar {
+    width: 30%;
+    float: left; }
+    body .sidebar input#search {
+      width: 100%;
+      font-size: 16px; }
+  body ul li {
+    list-style-type: none; }
+    body ul li a {
+      cursor: pointer;
+      color: #222;
+      width: 100%;
+      text-decoration: none;
+      padding: 15px; }
+      body ul li a:hover {
+        color: #222; }
+  body .list {
+    padding: 0px; }
+    body .list li:hover {
+      background: #F1F1F1;
+      color: #FFF; }
+  body canvas#myChart {
+    float: right;
+    margin-top: 70px;
+    width: 68% !important;
+    height: 30rem !important; }
+  body .list-item {
+    background: #F9F9F9;
+    display: inline-block;
+    padding: 20px 20px;
+    font-family: arial;
+    line-height: 2;
+    margin: 0 auto;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 16px;
+    width: 19%; } }
